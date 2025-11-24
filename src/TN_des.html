@@ -1,0 +1,178 @@
+<!-- 概设部 -->
+ <!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>概设部 - TANEI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+        /* 概设部特有样式：粉色/多彩渐变 */
+        :root { --primary: #f472b6; }
+        .hero-des {
+            background: radial-gradient(circle at 50% 50%, rgba(244, 114, 182, 0.15), transparent 70%),
+                        linear-gradient(45deg, rgba(255,255,255,0) 40%, rgba(251, 207, 232, 0.3) 100%);
+        }
+        .badge { background: rgba(244, 114, 182, 0.1); color: var(--primary); }
+        .btn.primary { background: var(--primary); }
+        .btn.primary:hover { background: #db2777; }
+        .btn-blog {
+            margin-top: 15px; font-size: 0.85rem; padding: 8px 20px;
+            border: 1px solid var(--primary); color: var(--primary);
+            border-radius: 20px; display: inline-flex; align-items: center; gap: 6px; transition: all 0.3s;
+        }
+        .btn-blog:hover { background: var(--primary); color: white; }
+        .resource-list { display: flex; flex-direction: column; gap: 15px; }
+        .resource-item {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 20px; border-radius: 12px; transition: all 0.3s;
+        }
+        .resource-item:hover { background: rgba(255,255,255,0.9); transform: translateX(10px); }
+        .res-info h4 { margin-bottom: 4px; color: #0f172a; }
+        .res-info span { font-size: 0.85rem; color: #64748b; }
+        .upload-zone {
+            border: 2px dashed var(--primary);
+            background: rgba(244, 114, 182, 0.05);
+            border-radius: 16px; padding: 40px; text-align: center;
+            cursor: pointer; transition: all 0.3s; margin-top: 30px;
+        }
+        .upload-zone:hover { background: rgba(244, 114, 182, 0.1); }
+        .upload-icon { font-size: 2rem; margin-bottom: 10px; display: block; }
+        
+        /* 特别样式：教程入口卡片 */
+        .tutorial-card {
+            background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+            border: none;
+        }
+        .tutorial-card h3 { color: #831843; }
+    </style>
+</head>
+
+<body>
+    <script class="sak" type="text/javascript" src="../sakura.js"></script>
+
+    <header class="site-header glass">
+        <div class="container header-inner">
+            <a class="logo" href="../index.html">TANEI.<span>ART</span></a>
+            <nav class="site-nav">
+                <a href="../index.html" class="nav-link">首页</a>
+                <a href="#members" class="nav-link">设计师</a>
+                <a href="#resources" class="nav-link">素材库</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero hero-des">
+            <div class="container hero-inner scroll-hidden">
+                <span class="badge">概设部</span>
+                <h1>定义<br>视觉<span class="highlight">美学</span></h1>
+                <p class="lead">负责 UI/UX 设计、海报绘制与视觉传达，用色彩点亮创意。</p>
+            </div>
+        </section>
+
+        <section id="members" class="section">
+            <div class="container">
+                <div class="section-header scroll-hidden">
+                    <h2>Artists</h2>
+                    <p>Pixel & Vector</p>
+                </div>
+                <div class="grid grid-4">
+                    <figure class="member glass scroll-hidden">
+                        <div class="avatar-box" style="background: linear-gradient(45deg, #f472b6, #fbbf24);"><div class="avatar" style="color:#f472b6;">U</div></div>
+                        <figcaption>
+                            <strong>Una</strong>
+                            <span>部长 / UI设计</span>
+                            <a href="#" class="btn-blog" target="_blank"><span>🔗</span> 访问博客</a>
+                        </figcaption>
+                    </figure>
+                     <figure class="member glass scroll-hidden delay-1">
+                        <div class="avatar-box" style="background: linear-gradient(45deg, #f472b6, #fbbf24);"><div class="avatar" style="color:#f472b6;">V</div></div>
+                        <figcaption>
+                            <strong>Vincent</strong>
+                            <span>平面设计</span>
+                            <a href="#" class="btn-blog" target="_blank"><span>🔗</span> 访问博客</a>
+                        </figcaption>
+                    </figure>
+                     <figure class="member glass scroll-hidden delay-2">
+                        <div class="avatar-box" style="background: linear-gradient(45deg, #f472b6, #fbbf24);"><div class="avatar" style="color:#f472b6;">L</div></div>
+                        <figcaption>
+                            <strong>Luna</strong>
+                            <span>插画绘制</span>
+                            <a href="#" class="btn-blog" target="_blank"><span>🔗</span> 访问博客</a>
+                        </figcaption>
+                    </figure>
+                     <figure class="member glass scroll-hidden delay-3">
+                        <div class="avatar-box" style="background: linear-gradient(45deg, #f472b6, #fbbf24);"><div class="avatar" style="color:#f472b6;">R</div></div>
+                        <figcaption>
+                            <strong>Ray</strong>
+                            <span>视频剪辑</span>
+                            <a href="#" class="btn-blog" target="_blank"><span>🔗</span> 访问博客</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="section">
+            <div class="container">
+                <div class="section-header scroll-hidden">
+                    <h2>设计资源</h2>
+                    <p>Tutorials & Assets</p>
+                </div>
+                <div class="grid grid-3">
+                    <div class="glass card tutorial-card scroll-hidden">
+                        <div class="card-icon" style="background: rgba(255,255,255,0.5);">🎨</div>
+                        <h3>在线教程系统</h3>
+                        <p>包含 PS 基础、PR 剪辑与秀米排版等完整课程。</p>
+                        <a href="../source/TN_des/index.html" class="btn primary" style="margin-top: auto;">进入学习 &rarr;</a>
+                    </div>
+
+                    <div class="glass card scroll-hidden delay-1" style="grid-column: span 2;">
+                        <h3>📁 素材与规范</h3>
+                        <div class="resource-list">
+                            <div class="resource-item glass">
+                                <div class="res-info">
+                                    <h4>社团 VI 视觉识别系统规范</h4>
+                                    <span>Owner: Una | PDF</span>
+                                </div>
+                                <a href="#" class="btn ghost">下载</a>
+                            </div>
+                             <div class="resource-item glass">
+                                <div class="res-info">
+                                    <h4>通用海报模板 (PSD)</h4>
+                                    <span>Owner: Vincent | 500MB</span>
+                                </div>
+                                <a href="#" class="btn ghost">下载</a>
+                            </div>
+                        </div>
+                        <div class="upload-zone" id="uploadArea" style="padding: 20px; margin-top: 20px;">
+                            <span class="upload-icon" style="font-size: 1.5rem;">🖼️</span>
+                            <h4>上传作品/素材</h4>
+                            <p style="font-size: 0.8rem; color: #999;">.psd, .ai, .png</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-left"><h3 class="logo">TANEI</h3><p>© 2024 Design Dept.</p></div>
+            <div class="footer-right"><a href="../index.html">返回主站</a></div>
+        </div>
+    </footer>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('show'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.scroll-hidden').forEach((el) => observer.observe(el));
+        document.getElementById('uploadArea').addEventListener('click', () => alert('上传接口连接中...'));
+    </script>
+</body>
+</html>

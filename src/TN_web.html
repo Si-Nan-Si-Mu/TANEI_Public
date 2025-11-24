@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>网络部 - TANEI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+        /* 网络部特有样式微调 */
+        .hero-net {
+            background: radial-gradient(circle at 50% 50%, rgba(43, 153, 231, 0.15), transparent 70%);
+        }
+        
+        /* 博客按钮样式 */
+        .btn-blog {
+            margin-top: 15px;
+            font-size: 0.85rem;
+            padding: 8px 20px;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.3s;
+        }
+        .btn-blog:hover {
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 4px 12px rgba(43, 153, 231, 0.2);
+        }
+        
+        /* 培训资源列表样式 */
+        .resource-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .resource-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-radius: 12px;
+            transition: all 0.3s;
+        }
+        .resource-item:hover {
+            background: rgba(255,255,255,0.9);
+            transform: translateX(10px);
+        }
+        .res-info h4 { margin-bottom: 4px; color: #0f172a; }
+        .res-info span { font-size: 0.85rem; color: #64748b; }
+        
+        /* 上传区域样式（虚线框） */
+        .upload-zone {
+            border: 2px dashed var(--primary);
+            background: rgba(43, 153, 231, 0.05);
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 30px;
+        }
+        .upload-zone:hover {
+            background: rgba(43, 153, 231, 0.1);
+        }
+        .upload-icon { font-size: 2rem; margin-bottom: 10px; display: block; }
+    </style>
+</head>
+
+<body>
+    <script class="sak" type="text/javascript" src="../sakura.js"></script>
+
+    <header class="site-header glass">
+        <div class="container header-inner">
+            <a class="logo" href="../index.html">TANEI.<span>NET</span></a>
+            <nav class="site-nav">
+                <a href="../index.html" class="nav-link">首页</a>
+                <a href="#members" class="nav-link">成员</a>
+                <a href="#training" class="nav-link">培训</a>
+                <a href="#wiki" class="nav-link">Wiki</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero hero-net">
+            <div class="container hero-inner scroll-hidden">
+                <span class="badge">网络部</span>
+                <h1>连接万物<br>构建<span class="highlight">基石</span></h1>
+                <p class="lead">负责社团网络基础设施运维、服务器管理以及网络安全技术研究。</p>
+            </div>
+        </section>
+
+        <section id="members" class="section">
+            <div class="container">
+                <div class="section-header scroll-hidden">
+                    <h2>部门成员</h2>
+                    <p>点击下方按钮访问成员个人技术博客</p>
+                </div>
+                
+                <div class="grid grid-4">
+                    <figure class="member glass scroll-hidden">
+                        <div class="avatar-box">
+                            <div class="avatar">L</div>
+                        </div>
+                        <figcaption>
+                            <strong>Linus</strong>
+                            <span>部长 / 运维</span>
+                            <a href="#" class="btn-blog" target="_blank">
+                                <span>🔗</span> 访问博客
+                            </a>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="member glass scroll-hidden delay-1">
+                        <div class="avatar-box">
+                            <div class="avatar">T</div>
+                        </div>
+                        <figcaption>
+                            <strong>Turing</strong>
+                            <span>网络安全</span>
+                            <a href="#" class="btn-blog" target="_blank">
+                                <span>🔗</span> 访问博客
+                            </a>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="member glass scroll-hidden delay-2">
+                        <div class="avatar-box">
+                            <div class="avatar">A</div>
+                        </div>
+                        <figcaption>
+                            <strong>Ada</strong>
+                            <span>云原生</span>
+                            <a href="#" class="btn-blog" target="_blank">
+                                <span>🔗</span> 访问博客
+                            </a>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="member glass scroll-hidden delay-3">
+                        <div class="avatar-box">
+                            <div class="avatar">K</div>
+                        </div>
+                        <figcaption>
+                            <strong>Kevin</strong>
+                            <span>后端开发</span>
+                            <a href="#" class="btn-blog" target="_blank">
+                                <span>🔗</span> 访问博客
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="training" class="section">
+            <div class="container">
+                <div class="section-header scroll-hidden">
+                    <h2>内部培训</h2>
+                    <p>Knowledge Sharing & Resources</p>
+                </div>
+
+                <div class="grid grid-3">
+                    <div class="glass card scroll-hidden" style="grid-column: span 2;">
+                        <h3>📁 课件归档</h3>
+                        <div class="resource-list">
+                            <div class="resource-item glass">
+                                <div class="res-info">
+                                    <h4>第一周：计算机网络基础</h4>
+                                    <span>讲师：Linus | 2024-03-10 | PDF, PPT</span>
+                                </div>
+                                <a href="#" class="btn ghost">下载</a>
+                            </div>
+                            
+                            <div class="resource-item glass">
+                                <div class="res-info">
+                                    <h4>第二周：Linux 基础命令与运维</h4>
+                                    <span>讲师：Ada | 2024-03-17 | Markdown</span>
+                                </div>
+                                <a href="#" class="btn ghost">下载</a>
+                            </div>
+
+                            <div class="resource-item glass">
+                                <div class="res-info">
+                                    <h4>第三周：Docker 容器化实践</h4>
+                                    <span>讲师：Kevin | 2024-03-24 | Video</span>
+                                </div>
+                                <a href="#" class="btn ghost">下载</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass card scroll-hidden delay-1">
+                        <h3>☁️ 内容上传</h3>
+                        <p style="font-size: 0.9rem; color: #666;">仅限部门管理员或讲师使用</p>
+                        
+                        <div class="upload-zone" id="uploadArea">
+                            <span class="upload-icon">📤</span>
+                            <h4>点击或拖拽文件至此</h4>
+                            <p style="font-size: 0.8rem; color: #999; margin-top: 5px;">支持 .md, .pdf, .pptx</p>
+                        </div>
+                        
+                        <div id="uploadProgress" style="display: none; margin-top: 20px; width: 100%;">
+                            <div style="height: 6px; background: #eee; border-radius: 3px; overflow: hidden;">
+                                <div style="height: 100%; width: 60%; background: var(--primary);"></div>
+                            </div>
+                            <p style="font-size: 0.8rem; margin-top: 5px; text-align: right;">Uploading... 60%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <h3 class="logo">TANEI</h3>
+                <p>© 2024 Network Dept.</p>
+            </div>
+            <div class="footer-right">
+                <a href="../index.html">返回主站</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 滚动动画逻辑（与主页一致）
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.scroll-hidden').forEach((el) => observer.observe(el));
+
+        // 简单的上传交互模拟
+        const uploadZone = document.getElementById('uploadArea');
+        uploadZone.addEventListener('click', () => {
+            alert('此功能需要后端接口支持。此处仅为设计展示。');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TANEI·计算机社团</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="ind_js.js" defer></script>
+</head>
+
+<body>
+    <script class="sak" type="text/javascript" src="sakura.js"></script>
+
+    <header class="site-header glass">
+        <div class="container header-inner">
+            <a class="logo" href="#">TANEI.<span>TECH</span></a>
+            <nav class="site-nav">
+                <a href="#about" class="nav-link">关于</a>
+                <a href="#activities" class="nav-link">活动</a>
+                <a href="#members" class="nav-link">成员</a>
+                <a href="#contact" class="nav-link">联系</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner scroll-hidden">
+                <a class="badge" href="https://www.scnu.edu.cn/">华南师范大学</a>
+                <h1><span class="highlight">塔内·</span>用代码<br>编织<span class="highlight">未来</span></h1>
+                <p class="lead">专注项目实践、技术分享与友好协作的极客社区。</p>
+                <div class="hero-cta">
+                    <a class="btn primary" href="#contact">加入我们</a>
+                    <a class="btn ghost" href="#activities">探索活动 &darr;</a>
+                </div>
+            </div>
+        </section>
+
+        <div id="sidebar" class="sidebar-collapsed glass">
+            <div id="sidebar-toggle">
+                <span>+</span>
+            </div>
+            <div id="department">
+                <h2>DEPT.</h2>
+                <a href="./src/TN_tec.html" id="tec" class="dept-link">技术部</a>
+                <a href="./src/TN_web.html" id="web" class="dept-link">网络部</a>
+                <a href="./src/TN_sal.html" id="sal" class="dept-link">策联部</a>
+                <a href="./src/TN_des.html" id="des" class="dept-link">概设部</a>
+            </div>
+        </div>
+
+        <section id="activities" class="section">
+            <div class="container">
+                <div class="section-header scroll-hidden">
+                    <h2>探索与创造</h2>
+                    <p>我们在做什么</p>
+                </div>
+                <div class="grid grid-3">
+                    <article class="card glass scroll-hidden delay-1">
+                        <div class="card-icon">🚀</div>
+                        <h3>项目实战</h3>
+                        <p>拒绝纸上谈兵。从需求分析到上线部署，体验完整的全栈开发流程。</p>
+                    </article>
+                    <article class="card glass scroll-hidden delay-2">
+                        <div class="card-icon">💡</div>
+                        <h3>技术工作坊</h3>
+                        <p>涵盖机器学习、云原生、前端工程化等前沿领域的短期密集特训。</p>
+                    </article>
+                    <article class="card glass scroll-hidden delay-3">
+                        <div class="card-icon">🎤</div>
+                        <h3>灵感分享</h3>
+                        <p>定期举办 Tech Talk，分享踩坑经验、面试技巧与黑科技。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="members" class="section">
+            <div class="container">
+                <div class="section-header scroll-hidden">
+                    <h2>核心成员</h2>
+                    <p>你可以认识这些有趣的灵魂</p>
+                </div>
+                <div class="grid grid-4">
+                    <figure class="member glass scroll-hidden">
+                        <div class="avatar-box">
+                            <div class="avatar">李</div>
+                        </div>
+                        <figcaption>
+                            <strong>李同学</strong>
+                            <span>前端架构</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="member glass scroll-hidden delay-1">
+                        <div class="avatar-box">
+                            <div class="avatar">王</div>
+                        </div>
+                        <figcaption>
+                            <strong>王同学</strong>
+                            <span>后端/DevOps</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="member glass scroll-hidden delay-2">
+                        <div class="avatar-box">
+                            <div class="avatar">张</div>
+                        </div>
+                        <figcaption>
+                            <strong>张同学</strong>
+                            <span>AI 算法</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="member glass scroll-hidden delay-3">
+                        <div class="avatar-box">
+                            <div class="avatar">赵</div>
+                        </div>
+                        <figcaption>
+                            <strong>赵同学</strong>
+                            <span>产品经理</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container scroll-hidden">
+                <div class="contact-wrapper glass">
+                    <div class="contact-text">
+                        <h2>保持联系</h2>
+                        <p>无论你是技术大牛还是萌新，TANEI 都欢迎你的加入。</p>
+                    </div>
+                    <form class="contact-form" action="#" onsubmit="return false;">
+                        <div class="form-group">
+                            <input id="name" type="text" placeholder=" " required />
+                            <label for="name">你的名字</label>
+                        </div>
+                        <div class="form-group">
+                            <input id="email" type="email" placeholder=" " required />
+                            <label for="email">电子邮箱</label>
+                        </div>
+                        <div class="form-actions">
+                            <button class="btn primary" type="submit">发送</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <h3 class="logo">TANEI</h3>
+                <p id="full-date-time"></p>
+            </div>
+            <div class="footer-right">
+                <a href="#">GitHub</a>
+                <a href="#">Bilibili</a>
+                <a href="mailto:contact@example.com">Email Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 时间脚本保持不变
+        function updateDateTime(){
+            const now=new Date();
+            const options={year:'numeric', month:'long', day:'numeric'};
+            document.getElementById("full-date-time").textContent = now.toLocaleDateString('zh-CN', options);
+        }
+        updateDateTime();
+
+        // --- 新增：滚动动画脚本 ---
+        const observerOptions = {
+            threshold: 0.1
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, observerOptions);
+
+        const hiddenElements = document.querySelectorAll('.scroll-hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>

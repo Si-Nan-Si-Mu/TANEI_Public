@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS基础（1）-概设教程</title>
+    <link rel="stylesheet" href="./style-nav.css">
+    <link rel="stylesheet" href="./style-content.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container" id="nav-container">
+            <div class="nav-brand" id="nav-brand">
+                <li class="nav-item">
+                    <a href="../../index.html" class="nav-link brand">
+                        <div class="item-txt brand" >
+                            <span>TANEI</span>
+                        </div>
+                    </a>
+                </li>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="../../index.html" class="nav-link menu">
+                        <div class="item-txt menu" >
+                            <span>塔内主站</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../src/TN_des.html" class="nav-link menu">
+                        <div class="item-txt menu" >
+                            <span>概设部主页</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item dropdown menu course">
+                    <a href="./department/gaishe/coures.html" class="nav-link dropdown menu course">
+                        <div class="item-txt menu course" >
+                            <span>概设教程</span>
+                            <span class="icon-png dropdown" ></span>
+                        </div>
+                    </a>
+                    <div class="dropdown-content">
+                        <ul class="dropdown-item">
+                            <a href="./department/gaishe/courses/xiumi.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>秀米排版</span></div>
+                            </a>
+                        </ul>
+                        <ul class="dropdown-item">
+                            <a href="./department/gaishe/courses/PS1.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>PS基础</span></div>
+                            </a>
+                        </ul>
+                        <ul class="dropdown-item">
+                            <a href="./department/gaishe/courses/P1.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>PR基础</span></div>
+                            </a>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item about">
+                    <a href="../../index.html" class="nav-link menu about">
+                        <div class="item-txt menu" >
+                            <span>关于</span>
+                        </div>
+                    </a>
+                </li>
+            </div>
+            <div class="nav-more">
+                <div class="nav-item more">
+                    <a class="nav-link more">
+                        <div class="item-txt more"><span>More</span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="content-container">
+        <aside class="tocbar">
+            <div class="toc-header">
+                <h2 class="header">PS基础（1）</h2>
+            </div>
+            <nav class="toc-item">
+                <a href="#section1" class="toc-link">1.创建第一个项目</a>
+                <div class="toc-subitem">
+                    <a href="#section1.1" class="toc-link">创建新项目</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section1.2" class="toc-link">基本界面</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section1.3" class="toc-link">查看和视图</a>
+                </div>
+            </nav>
+            <nav class="toc-item">
+                <a href="#section2" class="toc-link">2.认识图层</a>
+                <div class="toc-subitem">
+                    <a href="#section2.1" class="toc-link">置入外部图片</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section2.2" class="toc-link">自由变换</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section2.3" class="toc-link">图层覆盖关系</a>
+                </div>
+            </nav>
+            <nav class="toc-item">
+                <a href="#section3" class="toc-link">3.部分基本工具</a>
+                <div class="toc-subitem">
+                    <a href="#section3.1" class="toc-link">形状工具</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section3.2" class="toc-link">简单图层操作</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section3.3" class="toc-link">文字工具</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section3.4" class="toc-link">移动工具</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section3.5" class="toc-link">裁切工具和画布大小</a>
+                </div>
+            </nav>
+            <nav class="toc-item">
+                <a href="#section4" class="toc-link">4.选区和抠像</a>
+                <div class="toc-subitem">
+                    <a href="#section4.1" class="toc-link">矩形选框工具</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section4.2" class="toc-link">钢笔工具建立选区</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section4.3" class="toc-link">色彩范围选区</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section4.4" class="toc-link">应用：透视遮挡</a>
+                </div>
+                <p class="bottom blank"></p>
+            </nav>
+        </aside>
+        <div class="main-content">
+            <header class="main-header">
+                <h1>PS基础（1）</h1>
+                <p>开始第一个项目，认识图层、选区和部分简单的工具</h3>
+            </header>
+            <div class="section-main">
+                <div class="section" id="section1">
+                    <div class="section-header">
+                        <div class="section-number">1</div>
+                        <h2 class="section-intro">创建第一个项目</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="section-txt"  id="section1.1">
+                            <h2>创建新项目</h2>
+                            <p>启动PS，先点击“新文件”，之后会弹出“新建文档”窗口</p>
+                            <p>在窗口中选择新文件的配置。这里我们主要关注画布的宽高，这决定了我们最后导出的图片的尺寸</p>
+                            <p>可以通过直接选择<span class="emphasis">预设</span>好的配置，也可以在右侧<span class="emphasis">自定义</span>宽高</p>
+                            <p>（下面示例的第一个项目设置了500x500）</p>
+                            <div class="img"  onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct1/newObj1.png">
+                            </div>
+                            <p class="footnote">文档配置界面</p>
+                        </div>
+                        <div class="section-txt"  id="section1.2">
+                            <h2>基本界面</h2>
+                            <p>设定好项目配置后点击创建，随后进入正式的工作界面。如下图，其中中心这块白色就是我们的500x500画布（最后导出时不会包括画布之外的内容）</p>
+                            <p>（如果出现青色的参考线，点击上方“视图”->“参考线”->“清除参考线”，即可清除）</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct1/interface1.png">
+                            </div>
+                            <p class="footnote">创建好的初始界面（tips:创建好之后如果还想更改画布大小：右上角“图像”->“画布大小”）</p>
+                            <p></p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct1/interface2.jpg">
+                            </div>
+                            <p class="footnote">从小x书某博主偷（划掉）来的理解</p>
+                        </div>
+                        <div class="section-txt"  id="section1.3">
+                            <h2>查看和视图</h2>
+                            <p>滚轮：上下移动画布</p>
+                            <p> Ctrl+滚轮：左右移动画布</p>
+                            <p>Alt+滚轮：缩放画布</p>
+                            <div class="video-container">
+                                <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct1/view1.mp4" type="video/mp4" >
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p>抓手工具：自由移动画布</p>
+                            <p>旋转视图工具：旋转画布</p>
+                            <p>缩放工具：放大和缩小画布。左键放大，Alt+左键缩小</p>
+                            <div class="video-container">
+                                <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct1/view1.mp4" type="video/mp4" >
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section" id="section2">
+                    <div class="section-header">
+                        <div class="section-number">2</div>
+                        <h2 class="section-intro">认识图层</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="section-txt" id="section2.1">
+                            <h2>置入外部图片</h2>
+                            <p>置入嵌入对象（比如外部的图片），用人话说就是把外部的素材复制一份弄进刚刚创建的PS项目里</p>
+                            <p>点击左上方“文件”,在弹出的下拉选项栏中找到<span class="emphasis">“置入嵌入对象”</span>，点击后在弹出的窗口选择你要置入的图片</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/inserting1.png">
+                            </div>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/inserting2.png">
+                            </div>
+                            <p class="footnote">“文件”->“置入嵌入对象”->选择文件->置入</p>
+                            <p>另一种基本等价但更简单的方法：直接把图片从外面拖进PS工作区</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/inserting3.png">
+                            </div>
+                            <p class="footnote">非常人性化<span class="emoji">😋</span></p>
+                        </div>
+                        <div class="section-txt" id="section2.2">
+                            <h2>自由变换</h2>
+                            <p>我们置入图片后，图片将会变成一个图层（见右下角），并且这个图层自动进入<span class="emphasis">“自由变换”</span>状态</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/transform1.png">
+                            </div>
+                            <p>下面的视频展示了自由变换下图片的缩放。注意缩放时可以在上工具栏属性中<span class="emphasis">锁定</span>图层的<span class="emphasis">宽高比</span>，从而实现等比缩放</p>
+                            <div class="video-container">
+                                <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct2/transform2.mp4" type="video/mp4" >
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p class="footnote">图层移动，不按比例和锁定比例的缩放</p>
+                            <p>当鼠标靠近蓝边时，出现左边直的双箭头时（按住左键拖动）是拉伸，右边的弯曲双箭头是旋转</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/transform3.png">
+                                <img src="./media/main-content/sct2/transform4.png">
+                            </div>
+                            <p class="footnote">左：缩放  右：旋转</p>
+                            <p>右击图层，在弹出的下拉菜单中可以切换“自由变换”的模式：斜切、透视、扭曲等。其他180°旋转水平翻转这些选项就是字面意思，可以自己探索</p>
+                            <p>调整好图片之后，在右键下拉菜单中点“置入”，即可退出自由变换模式（或者等价操作直接<span class="emphasis">回车Enter</span>，少点两次鼠标）</p>
+                            <p>要想再次进入自由变换模式，可以使用快捷键<span class="emphasis">Ctrl+T</span>（助记：Transform）</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/transform5.png">
+                            </div>
+                            <p class="footnote">右键下拉菜单</p>
+                        </div>
+                        <div class="section-txt" id="section2.3">
+                            <h2>图层覆盖关系</h2>
+                            <p>如图，右下角的“图层”显示了项目包含的所有图层，<span class="emphasis">当前选中</span>的图层有<span class="emphasis">高亮</span>提示</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/coverage1.png">
+                            </div>
+                            <p>置入外部图片时，最后置入的图片通常在当前选中图层的上方。没有严格顺序的随意置入可能会导致图层覆盖顺序混乱</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/coverage2.png">
+                            </div>
+                            <p class="footnote">先置入了两个emoji，接着置入猫meme，结果猫盖住了前两者</p>
+                            <p>单个图层旁边有一个<span class="emphasis">眼睛形状</span>的按钮，点击它可以隐藏或显示图层。隐藏猫图层，可以看见下面被覆盖的的emoji图层</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/coverage3.png">
+                            </div>
+                            <p>通过在图层窗口拖动图层来调整图层的覆盖顺序,注意蓝色框出来的目标位置提示</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/coverage4.png">
+                            </div>
+                            <p>调整图层顺序，利用自由变换调整好后，你就得到了一个本质上只是在叠加多张图片的简单表情包</p>
+                            <p>点击右上角“文件”，在下拉菜单中选择<span class="emphasis">“导出”->“快速导出为png”</span>，即可将当前画布可见的内容导出为png(所见即所得，如果图层被隐藏则不会被导出)</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/coverage5.png">
+                            </div>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/YOU!.png">
+                            </div>
+                            <p class="footnote">YOU!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section" id="section3">
+                    <div class="section-header">
+                        <div class="section-number">3</div>
+                        <h2 class="section-intro">部分基本工具</h2>
+                    </div>
+                    <div class="section-txt" id="section3.1">
+                        <p>下面进入第二个项目的制作。重新新建一个项目：点击右上角“文件”->“新建”，选择预设1920x1080</p>
+                        <h2>形状工具</h2>
+                        <p>顾名思义，形状工具就是一个可以创建几何形状的工具，下面介绍它最简单的一个使用方法</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct3/shape1.png">
+                        </div>
+                        <p class="footnote">形状工具</p>
+                        <p>首先，点击工具栏的形状工具，然后配置上方的<span class="emphasis">工具栏属性</span></p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct3/shape2.png">
+                        </div>
+                        <p class="footnote">设置工具栏属性</p>
+                        <p>设置好工具栏属性，形状工具使用时就会创建出一个对应属性的形状</p>
+                        <p>例如选择了矩形工具，设置了填充为红色，描边为透明，那么这时使用工具就会创建一个实心的无描边红色矩形</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct3/shape3.png">
+                        </div>
+                        <p class="footnote">创建形状，形状图层的属性和工具栏属性相同</p>
+                    </div>
+                    <div class="section-txt" id="section3.2">
+                        <h2>简单图层操作</h2>
+                        <p>接着调整形状图层的属性。选中图层，在上方属性窗口可以看见图层的属性选项，这里我们设置H=216，W=400，X=0，Y=0</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct3/shape4.png">
+                        </div>
+                        <p class="footnote">调整图层属性</p>
+                        <p>下面要创建多个相同的形状图层</p>
+                        <p>为了不再重复上面的步骤，我们可以复制图层：在图层窗口右击想要复制的图层，在弹出的菜单中选择复制图层</p>
+                        <p>或者直接选中图层，使用快捷键<span class="emphasis">Ctrl+J</span></p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct3/shape-copy.png">
+                        </div>
+                        <p class="footnote">又要按两下鼠标</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct3/attribute1.png">
+                        </div>
+                        <p class="footnote">快捷键就是爽</p>
+                        <p>提升使用效率的tips：<span class="emphasis">学会给图层分组！</span></p>
+                        <p>我们上面复制了一堆图层，建议分组打包起来管理。</p>
+                        <p>对于同一类的图层（大家都懒得命名，不分组谁知道矩形1 拷贝 23是谁啊），分组才不会不混淆，特别是以后几十上百个图层的时候</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct3/grouping.png">
+                        </div>
+                        <p class="footnote">先多选多个图层，再点下面文件夹图标，接着这些图层就会全部收进同一个组</p>
+                        <p>剩下来的操作基本如法炮制：先创建一个形状，调整好属性，然后Ctrl+J复制，再调整复制出来的形状的属性</p>
+                        <p>最后实现下面的效果：五个不同颜色的矩形被黑色线条分割，右侧的白色背景被换成灰色</p>
+                        <p>参考的属性参数：水平黑色线段：1920x6的黑色矩形，坐标：(0,-3+216*n)；垂直黑色线段：6x1080,坐标：(400,0)；灰色背景：1920x1080的灰色矩形，图层置于最下方</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct3/attribute2.png">
+                        </div>
+                        <p class="footnote">最后的效果，图层分组</p>
+
+                    </div>
+                    <div class="section-txt" id="section3.3">
+                        <h2>文字工具</h2>
+                        <p>文字工具创建文字图层的逻辑和上面介绍的形状工具创建形状图层的逻辑差不多</p>
+                        <p>先设置工具栏属性，创建好文字图层后，自行输入文字,点击空白区域退出输入状态即可</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct3/text1.png">
+                        </div>
+                        <p class="footnote">文字工具属性栏</p>
+                    </div>
+                    <div class="section-txt" id="section3.4">
+                        <h2>移动工具</h2>
+                        <p>很简单，就是用来移动图层的位置。切换到移动工具，选中要移动的图层然后鼠标在工作区上拖动某一个图层即可，另外可以通过方向键逐个像素微调</p>
+                        <p>不同于自由变换Ctrl+T时的移动，移动工具（自动选择开）用鼠标只能移动那些最顶层露出来的图层</p>
+                        <p>而自由变换选到谁就只针对谁，即使自由变换的对象被盖住了，也能通过拖动移动。想要实现更精细的移动，建议还是使用自由变换或者修改坐标</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct3/moving1.png">
+                        </div>
+                        <p class="footnote">移动工具</p>
+                        <p>再加上emoji排名，最终效果如下</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct3/final.png">
+                        </div>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct3/emoji-ranking.png">
+                        </div>
+                        <p class="footnote">由夯到拉<span class="emoji">🤓☝️</span></p>
+                    </div>
+                    <div class="section-txt" id="section3.5">
+                        <h2>裁切工具和画布大小</h2>
+                        <p>假如我们希望缩小画布大小，我们可以使用裁切工具</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct3/cutting1.png">
+                        </div>
+                        <p class="footnote">裁切工具，剪掉一部分画布</p>
+                        <p>要更改画布大小（可以放大可以缩小），还可以通过右上角“图像”->“画布大小”更改</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct3/resizing1.png">
+                        </div>
+                        <p class="footnote">画布大小选项</p>
+                        <p>下面的视频展示了重新设置画布大小的收缩和伸展逻辑，通过选择九宫格其中一格，设定原来的图像向什么方向收缩/伸展</p>
+                        <p>裁剪时，选择九宫格的左上角，则缩小的画布将会裁剪下侧和右侧的内容，尽可能保留原来左上角的内容</p>
+                        <p>拓展时，选择九宫格的右下角，则拓展的画布将会拼接在画布的上侧和左侧，原来的内容相对地留在右下角</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct3/resizing2.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">希望你能看懂吧</p>
+
+                    </div>
+                </div>
+                <div class="section" id="section4">
+                    <div class="section-header">
+                        <div class="section-number">4</div>
+                        <h2 class="section-intro">选区和抠像</h2>
+                    </div>
+                    <div class="section-txt" id="section4.1">
+                        <p>选区是一个非常重要的概念，简单来说，选区就是一个在画布上的区域，帮助你选取<span class="emphasis">当前选中图层</span>上面的像素</p>
+                        <p>选区的一个最重要的作用就是抠图。抠图本质上就是选出图片中那些你想要的像素，把它们单独拎出来，选区就是干这个的</p>
+                        <h2>矩形选框工具</h2>
+                        <p>顾名思义，矩形选框可以很方便地创建一个矩形的选区。选区范围由<span class="emphasis">虚线边框</span>表示</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct4/selection1.png">
+                        </div>
+                        <p class="footnote">虚线框住的选区，右键菜单</p>
+                        <p>如下图,创建好选区之后，右击选区内的区域，在弹出的菜单中可以见到<span class="emphasis">“通过拷贝的图层”</span>和<span class="emphasis">“通过剪切的图层”</span></p>
+                        <p>“拷贝”：将选区内的像素复制一份成为新图层，<span class="emphasis">原来的图层不变</span>；</p>
+                        <p>“剪切”：仍然将选区内的像素拎出来成为新图层，但是原来的图层将<span class="emphasis">被抠除这部分</span></p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct4/selection2.png">
+                        </div>
+                        <p class="footnote">上图为剪切的情况，若为拷贝则原图层不变</p>
+                    </div>
+                    <div class="section-txt" id="section4.2">
+                        <h2>钢笔工具建立选区</h2>
+                        <p>钢笔工具的应用场景很多，这里介绍用它建立简单选区的用法</p>
+                        <p>点击右上角的<span class="emphasis">”文件“->”打开“</span>，直接打开一张外部图片。这样直接创建了一个项目：这个项目的画布大小就是这个图片的大小；只有一个图层，就是这个图片的图层</p>
+                        <p>如下图，找到钢笔工具，在上方工具栏属性处选择<span class="emphasis">“路径”</span>模式</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct4/pen1.png">
+                        </div>
+                        <p class="footnote">钢笔工具</p>
+                        <p>下面的视频展示了如何用钢笔工具创建选区。</p>
+                        <p>简单来说，就是用钢笔工具左键创建一个个<span class="emphasis">锚点</span>。锚点之间会以直线相连，最后一个锚点和第一个相连后路径闭合，得到框住我们需要抠图的区域的闭合路径</p>
+                        <p>得到闭合路径，创建选区就很容易了。右键在弹出的菜单中选择“建立选区”</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct4/pen2.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">沿着边缘不断创建锚点得到的路径，再根据路径创建选区</p>
+                        <p>建立选区之后，需要切换到“矩形选框工具”后，再右键，选择“通过拷贝的图层”，这样你就抠出了刚才钢笔工具路径框选出的区域</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct4/pen3.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">好书，兄弟，好书</p>
+                    </div>
+                    <div class="section-txt" id="section4.3">
+                        <h2>色彩范围选区</h2>
+                        <p>下面介绍另外一种创建选区抠图的方法——色彩范围选择</p>
+                        <p>如下图，点击上方<span class="emphasis">“选择”->“色彩范围”</span>，弹出“色彩选择”窗口后，在工作区<span class="emphasis">吸取背景色</span>（鼠标变成一个小吸管）</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct4/colorRange1.png">
+                        </div>
+                        <p class="footnote">“选择”->“色彩范围”</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct4/colorRange2.png">
+                        </div>
+                        <p class="footnote">鼠标变成小吸管</p>
+                        <p>然后在“色彩选择”窗口中<span class="emphasis">调整颜色容差大小</span>，直到下面的黑白轮廓变得<span class="emphasis">清晰</span>（这表示你要抠出的主题和背景很好地分离开了）</p>
+                        <p>点击确定，这时你得到了选出背景的选区。但我们需要抠出主体，所以还要右击选区，点击<span class="emphasis">反向选择</span>，此时才得到与背景分离的主体的选区</p>
+                        <p>接着如法炮制，切换到“矩形选框工具”后，再右键，选择“通过拷贝的图层”，你就得到了抠出来的图层</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct4/colorRange3.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                    </div>
+                    <div class="section-txt" id="section4.4">
+                        <h2>应用：透视遮挡</h2>
+                        <p>我们在上面的操作中分别在两个不同的直接打开的图片项目中得到了一本书和一支笔的图层，现在我们希望它们能同时应用到同一个项目中</p>
+                        <p>选中抠出的图层，Ctrl+C复制，接着切换到目标的项目中，Ctrl+V粘贴。这样我们就将其他项目的图层放进来了</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct4/practice1.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">项目之间的复制迁移操作</p>
+                        <p>接着我们实现手抓住物品的遮挡透视感觉</p>
+                        <p>用钢笔工具抠出部分的手，单独拷贝一份图层。然后将书置于这个图层和原来猫的图层之间，这样就显出书被两者夹住的感觉</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct4/practice2.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p>对另一只手如法炮制，可得最终成果</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct4/practice3.png">
+                        </div>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct4/Despair.png">
+                        </div>
+                        <p class="footnote">口瓜，我不要写高数口牙</p>
+                    </div>
+                </div>
+
+                <p class="bottom blank"></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const links = document.querySelectorAll('.toc-item a');
+        const sections = document.querySelectorAll('.section');
+        // 点击事件处理
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                links.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        // 使用Intersection Observer API进行更精确的检测
+        const observerOptions = {
+            root: null,
+            rootMargin: '-20% 0px -70% 0px', // 调整触发区域
+            threshold: 0
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    links.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+        
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    });
+    function toggleZoom(img) {
+        img.classList.toggle('zoomed');
+    }
+    function toggleVideoSize(video) {
+        // 检查点击的是否是视频控件
+        const isControlClick = event.target === video && 
+            (event.offsetY > video.clientHeight - 50); // 假设控件高度约50px
+        
+        if (isControlClick) {
+            // 如果是点击控件，不处理缩放，让浏览器处理播放控制
+            return;
+        }
+        
+        // 点击视频主体，进行缩放
+        const isZoomed = video.classList.contains('zoomed');
+        const parent = video.parentElement;
+        if (isZoomed) {
+            // 缩小
+            video.classList.remove('zoomed');
+            video.style.cursor = 'pointer';
+            parent.classList.remove('zoomed');
+        } else {
+            // 放大
+            video.classList.add('zoomed');
+            video.style.cursor = 'default';
+            parent.classList.add('zoomed');
+        }
+        // 阻止事件冒泡，避免重复触发
+        event.stopPropagation();
+    }
+</script>
+</html>

@@ -1,0 +1,174 @@
+<!-- 策联部 -->
+ <!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>策联部 - TANEI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+        /* 策联部特有样式：暖色调/紫色调 */
+        :root { --primary: #9f7aea; /* 覆盖主色为紫色 */ }
+        .hero-sal {
+            background: radial-gradient(circle at 80% 20%, rgba(236, 72, 153, 0.15), transparent 60%),
+                        radial-gradient(circle at 20% 80%, rgba(159, 122, 234, 0.15), transparent 60%);
+        }
+        .badge { background: rgba(159, 122, 234, 0.1); color: var(--primary); }
+        .btn.primary { background: var(--primary); }
+        .btn-blog {
+            margin-top: 15px; font-size: 0.85rem; padding: 8px 20px;
+            border: 1px solid var(--primary); color: var(--primary);
+            border-radius: 20px; display: inline-flex; align-items: center; gap: 6px; transition: all 0.3s;
+        }
+        .btn-blog:hover { background: var(--primary); color: white; }
+        .resource-list { display: flex; flex-direction: column; gap: 15px; }
+        .resource-item {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 20px; border-radius: 12px; transition: all 0.3s;
+        }
+        .resource-item:hover { background: rgba(255,255,255,0.9); transform: translateX(10px); }
+        .res-info h4 { margin-bottom: 4px; color: #0f172a; }
+        .res-info span { font-size: 0.85rem; color: #64748b; }
+        .upload-zone {
+            border: 2px dashed var(--primary);
+            background: rgba(159, 122, 234, 0.05);
+            border-radius: 16px; padding: 40px; text-align: center;
+            cursor: pointer; transition: all 0.3s; margin-top: 30px;
+        }
+        .upload-zone:hover { background: rgba(159, 122, 234, 0.1); }
+        .upload-icon { font-size: 2rem; margin-bottom: 10px; display: block; }
+    </style>
+</head>
+
+<body>
+    <script class="sak" type="text/javascript" src="../sakura.js"></script>
+
+    <header class="site-header glass">
+        <div class="container header-inner">
+            <a class="logo" href="../index.html">TANEI.<span>PLAN</span></a>
+            <nav class="site-nav">
+                <a href="../index.html" class="nav-link">首页</a>
+                <a href="#members" class="nav-link">策划人</a>
+                <a href="#resources" class="nav-link">资源库</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero hero-sal">
+            <div class="container hero-inner scroll-hidden">
+                <span class="badge">策联部</span>
+                <h1>让灵感<br>落地<span class="highlight">生根</span></h1>
+                <p class="lead">连接内外的桥梁，负责活动策划、外联赞助与社团品牌建设。</p>
+            </div>
+        </section>
+
+        <section id="members" class="section">
+            <div class="container">
+                <div class="section-header scroll-hidden">
+                    <h2>Brainstormers</h2>
+                    <p>创意与执行的完美结合</p>
+                </div>
+                <div class="grid grid-4">
+                    <figure class="member glass scroll-hidden">
+                        <div class="avatar-box" style="background: linear-gradient(45deg, #9f7aea, #ec4899);"><div class="avatar" style="color:#9f7aea;">C</div></div>
+                        <figcaption>
+                            <strong>Chloe</strong>
+                            <span>部长 / 统筹</span>
+                            <a href="#" class="btn-blog" target="_blank"><span>🔗</span> 访问博客</a>
+                        </figcaption>
+                    </figure>
+                     <figure class="member glass scroll-hidden delay-1">
+                        <div class="avatar-box" style="background: linear-gradient(45deg, #9f7aea, #ec4899);"><div class="avatar" style="color:#9f7aea;">B</div></div>
+                        <figcaption>
+                            <strong>Bob</strong>
+                            <span>外联赞助</span>
+                            <a href="#" class="btn-blog" target="_blank"><span>🔗</span> 访问博客</a>
+                        </figcaption>
+                    </figure>
+                     <figure class="member glass scroll-hidden delay-2">
+                        <div class="avatar-box" style="background: linear-gradient(45deg, #9f7aea, #ec4899);"><div class="avatar" style="color:#9f7aea;">E</div></div>
+                        <figcaption>
+                            <strong>Emma</strong>
+                            <span>文案策划</span>
+                            <a href="#" class="btn-blog" target="_blank"><span>🔗</span> 访问博客</a>
+                        </figcaption>
+                    </figure>
+                     <figure class="member glass scroll-hidden delay-3">
+                        <div class="avatar-box" style="background: linear-gradient(45deg, #9f7aea, #ec4899);"><div class="avatar" style="color:#9f7aea;">D</div></div>
+                        <figcaption>
+                            <strong>David</strong>
+                            <span>活动执行</span>
+                            <a href="#" class="btn-blog" target="_blank"><span>🔗</span> 访问博客</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="section">
+            <div class="container">
+                <div class="section-header scroll-hidden">
+                    <h2>策划锦囊</h2>
+                    <p>Events & Sponsorship</p>
+                </div>
+                <div class="grid grid-3">
+                    <div class="glass card scroll-hidden" style="grid-column: span 2;">
+                        <h3>📁 案例文档</h3>
+                        <div class="resource-list">
+                            <div class="resource-item glass">
+                                <div class="res-info">
+                                    <h4>新生见面会策划案 v2.0</h4>
+                                    <span>Owner: Chloe | PPTX</span>
+                                </div>
+                                <a href="#" class="btn ghost">查看</a>
+                            </div>
+                            <div class="resource-item glass">
+                                <div class="res-info">
+                                    <h4>外联赞助商话术手册</h4>
+                                    <span>Owner: Bob | PDF</span>
+                                </div>
+                                <a href="#" class="btn ghost">查看</a>
+                            </div>
+                            <div class="resource-item glass">
+                                <div class="res-info">
+                                    <h4>推文排版规范 & 风格指南</h4>
+                                    <span>Owner: Emma | Markdown</span>
+                                </div>
+                                <a href="#" class="btn ghost">查看</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass card scroll-hidden delay-1">
+                        <h3>☁️ 方案归档</h3>
+                        <p style="font-size: 0.9rem; color: #666;">Archive your brilliant ideas</p>
+                        <div class="upload-zone" id="uploadArea">
+                            <span class="upload-icon">📑</span>
+                            <h4>上传策划书</h4>
+                            <p style="font-size: 0.8rem; color: #999;">.doc, .pdf, .pptx</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-left"><h3 class="logo">TANEI</h3><p>© 2024 Planning Dept.</p></div>
+            <div class="footer-right"><a href="../index.html">返回主站</a></div>
+        </div>
+    </footer>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('show'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.scroll-hidden').forEach((el) => observer.observe(el));
+        document.getElementById('uploadArea').addEventListener('click', () => alert('上传接口连接中...'));
+    </script>
+</body>
+</html>
