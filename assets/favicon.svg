@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2b99e7"/>
+      <stop offset="50%" style="stop-color:#7c9cf4"/>
+      <stop offset="100%" style="stop-color:#e8aaf4"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.95)"/>
+      <stop offset="100%" style="stop-color:rgba(232,245,253,0.9)"/>
+    </linearGradient>
+  </defs>
+  <!-- 六边形背景 - 科技感 -->
+  <path d="M32 4 L56 18 L56 46 L32 60 L8 46 L8 18 Z" fill="url(#bg)" stroke="url(#g)" stroke-width="2"/>
+  <!-- 字母 T -->
+  <path d="M22 20 L42 20 L42 24 L34 24 L34 48 L30 48 L30 24 L22 24 Z" fill="url(#g)"/>
+  <!-- 底部光点 -->
+  <circle cx="32" cy="52" r="2" fill="#e8aaf4" opacity="0.8"/>
+</svg>

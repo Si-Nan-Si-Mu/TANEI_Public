@@ -1,0 +1,77 @@
+/**
+ * TANEI 项目 - 自定义鼠标光标样式（颜色跟随页面 --primary）
+ * 更新时间: 2025-03-09
+ */
+/* 仅在非触摸设备启用自定义光标（触摸屏保持系统默认） */
+@media (pointer: fine) {
+    body,
+    body * {
+        cursor: none !important;
+    }
+
+    a, button, [role="button"], input[type="submit"], input[type="button"],
+    .btn, .dept-link, .nav-link, #sidebar-toggle {
+        cursor: none !important;
+    }
+
+    input, textarea, select, [contenteditable="true"] {
+        cursor: text !important;
+    }
+}
+
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 99999;
+}
+
+.custom-cursor-dot {
+    position: fixed;
+    width: 16px;
+    height: 16px;
+    background: var(--primary, #2b99e7);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.15s ease-out, width 0.2s ease, height 0.2s ease, background 0.3s, box-shadow 0.3s, border-color 0.3s;
+    box-shadow: 0 0 14px var(--primary, #2b99e7);
+    pointer-events: none;
+}
+
+.custom-cursor-ring {
+    position: fixed;
+    width: 52px;
+    height: 52px;
+    border: 2.5px solid var(--primary, #2b99e7);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.08s ease-out, width 0.2s ease, height 0.2s ease, border-color 0.3s;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.custom-cursor.hover .custom-cursor-dot {
+    width: 22px;
+    height: 22px;
+    background: linear-gradient(135deg, var(--primary, #2b99e7) 0%, var(--accent, #e8aaf4) 100%);
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0 0 24px rgba(43, 153, 231, 0.6), 0 0 12px rgba(232, 170, 244, 0.4);
+}
+
+.custom-cursor.hover .custom-cursor-ring {
+    width: 72px;
+    height: 72px;
+    opacity: 0.8;
+    border-width: 3px;
+    border-style: solid;
+    border-color: var(--primary, #2b99e7);
+}
+
+.custom-cursor.hidden .custom-cursor-dot,
+.custom-cursor.hidden .custom-cursor-ring {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+}

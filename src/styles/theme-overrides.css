@@ -1,0 +1,256 @@
+/* 主题覆盖 - 各部门页面配色与光标变量 | 更新时间: 2025-03-09 */
+html {
+  scroll-behavior: smooth;
+}
+
+a.router-link-active.nav-link,
+a.router-link-active.dept-link,
+a.router-link-exact-active.nav-link,
+a.router-link-exact-active.dept-link {
+  color: var(--primary);
+}
+
+a.router-link-active.nav-link::after,
+a.router-link-exact-active.nav-link::after {
+  width: 100%;
+}
+
+a.router-link-active.dept-link,
+a.router-link-exact-active.dept-link {
+  background: var(--primary);
+  color: white;
+}
+
+body.page-auth,
+body.page-agreement,
+body.page-dept,
+body.page-home {
+  min-height: 100vh;
+}
+
+body.page-home {
+  --primary: #2b99e7;
+}
+
+body.page-auth {
+  --primary: #2b99e7;
+}
+
+body.page-agreement {
+  --primary: #2b99e7;
+}
+
+body.page-auth .site-footer,
+body.page-agreement .site-footer,
+body.page-dept .site-footer {
+  margin-top: 0;
+}
+
+body.page-dept-tech {
+  --primary: #2563eb;
+  --accent: #60a5fa;
+  background-color: #e1eaf5;
+  background-image:
+    radial-gradient(at 0% 0%, rgba(43, 153, 231, 0.35) 0px, transparent 50%),
+    radial-gradient(at 100% 20%, rgba(0, 200, 255, 0.25) 0px, transparent 50%),
+    radial-gradient(at 80% 80%, rgba(100, 180, 255, 0.2) 0px, transparent 50%),
+    radial-gradient(at 20% 100%, rgba(59, 130, 246, 0.25) 0px, transparent 50%);
+}
+
+body.page-dept-network {
+  --primary: #06b6d4;
+  --accent: #22d3ee;
+  background-color: #e5f4f0;
+  background-image:
+    radial-gradient(at 0% 0%, rgba(34, 211, 238, 0.3) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(52, 211, 153, 0.35) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(6, 182, 212, 0.25) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(16, 185, 129, 0.3) 0px, transparent 50%);
+}
+
+body.page-dept-planning {
+  --primary: #9f7aea;
+  --accent: #c4b5fd;
+  background-color: #f3eef8;
+  background-image:
+    radial-gradient(at 0% 20%, rgba(159, 122, 234, 0.35) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(236, 72, 153, 0.25) 0px, transparent 50%),
+    radial-gradient(at 80% 80%, rgba(167, 139, 250, 0.3) 0px, transparent 50%),
+    radial-gradient(at 20% 100%, rgba(244, 114, 182, 0.2) 0px, transparent 50%);
+}
+
+body.page-dept-design {
+  --primary: #f472b6;
+  --accent: #f9a8d4;
+  background-color: #fdf2f8;
+  background-image:
+    radial-gradient(at 0% 0%, rgba(244, 114, 182, 0.35) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(251, 207, 232, 0.4) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(236, 72, 153, 0.25) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(249, 168, 212, 0.3) 0px, transparent 50%);
+}
+
+.hero-tec {
+  background: radial-gradient(circle at 30% 30%, rgba(43, 100, 231, 0.15), transparent 60%),
+    radial-gradient(circle at 70% 70%, rgba(0, 255, 200, 0.1), transparent 60%);
+}
+
+.hero-net {
+  background: radial-gradient(circle at 50% 50%, rgba(43, 153, 231, 0.15), transparent 70%);
+}
+
+.hero-sal {
+  background: radial-gradient(circle at 80% 20%, rgba(236, 72, 153, 0.15), transparent 60%),
+    radial-gradient(circle at 20% 80%, rgba(159, 122, 234, 0.15), transparent 60%);
+}
+
+.hero-des {
+  background: radial-gradient(circle at 50% 50%, rgba(244, 114, 182, 0.15), transparent 70%),
+    linear-gradient(45deg, rgba(255, 255, 255, 0) 40%, rgba(251, 207, 232, 0.3) 100%);
+}
+
+body.page-dept-planning .badge,
+body.page-dept-design .badge {
+  color: var(--primary);
+}
+
+body.page-dept-planning .btn.primary,
+body.page-dept-design .btn.primary {
+  background: var(--primary);
+}
+
+body.page-dept-design .btn.primary:hover {
+  background: #db2777;
+}
+
+.btn-blog {
+  margin-top: 15px;
+  font-size: 0.85rem;
+  padding: 8px 20px;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.btn-blog:hover {
+  background: var(--primary);
+  color: white;
+  box-shadow: 0 4px 12px rgba(43, 153, 231, 0.2);
+}
+
+.resource-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.resource-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 12px;
+  transition: all 0.3s;
+}
+
+.resource-item:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateX(10px);
+}
+
+.res-info h4 {
+  margin-bottom: 4px;
+  color: #0f172a;
+}
+
+.res-info span {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.upload-zone {
+  border: 2px dashed var(--primary);
+  background: rgba(43, 153, 231, 0.05);
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 30px;
+}
+
+.upload-zone:hover {
+  background: rgba(43, 153, 231, 0.1);
+}
+
+.upload-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.tutorial-card {
+  background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+  border: none;
+}
+
+.tutorial-card h3 {
+  color: #831843;
+}
+
+.full-height-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.full-height-layout > main {
+  flex: 1;
+}
+
+.notice-inline {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.text-gradient-avatar {
+  background: linear-gradient(45deg, var(--primary), var(--accent));
+}
+
+.upload-progress {
+  display: none;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.upload-progress-bar {
+  height: 6px;
+  background: #eee;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.upload-progress-bar > div {
+  height: 100%;
+  width: 60%;
+  background: var(--primary);
+}
+
+.upload-progress-text {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .resource-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

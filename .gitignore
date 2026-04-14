@@ -1,0 +1,18 @@
+# 依赖与构建产物
+node_modules/
+dist/
+*.tsbuildinfo
+
+# 环境变量与本地配置（禁止提交密钥）
+.env
+.env.*
+!.env.example
+
+# 日志与编辑器
+*.log
+.DS_Store
+.idea/
+.vscode/
+
+# 测试覆盖率
+coverage/
