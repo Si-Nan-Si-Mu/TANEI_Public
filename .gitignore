@@ -8,9 +8,17 @@ dist/
 .env.*
 !.env.example
 
+# 私钥目录（勿提交仓库）
+**/TN私钥/
+
+# 根目录私钥文件名（若本地放置）
+*.key
+tanei.pem
+
 # 日志与编辑器
 *.log
 .DS_Store
+Thumbs.db
 .idea/
 .vscode/
 

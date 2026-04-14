@@ -1,6 +1,7 @@
 /**
- * TANEI 静态服务 + 登录/注册 API
- * 运行: node server.js
+ * TANEI 静态服务 + 登录/注册 API（可选：无 Vite 时的简易演示）
+ * 使用 .cjs 扩展名，以便在 package.json 含 "type": "module" 时仍可用 CommonJS。
+ * 运行: node server.cjs 或 npm run start
  * 访问: http://127.0.0.1:3000
  */
 
@@ -12,7 +13,9 @@ const crypto = require('crypto');
 const PORT = 3000;
 const ROOT = __dirname;
 
-const PRIVATE_KEY_PATH = path.join(ROOT, '../TN私钥/tanei.pem');
+// 私钥路径（与 frontend/assets/public.pem 配对）；可用环境变量 TANEI_PRIVATE_KEY_PATH 覆盖
+const PRIVATE_KEY_PATH =
+  process.env.TANEI_PRIVATE_KEY_PATH || path.join(ROOT, '../TN私钥/tanei.pem');
 let privateKey = null;
 try {
   privateKey = fs.readFileSync(PRIVATE_KEY_PATH, 'utf8');
@@ -107,5 +110,7 @@ function send404(res) {
 
 server.listen(PORT, () => {
   console.log(`TANEI 服务已启动: http://127.0.0.1:${PORT}`);
-  if (!privateKey) console.log('提示: 未配置私钥，请将 TN私钥/tanei.pem 放在项目根目录');
+  if (!privateKey) {
+    console.log('提示: 未配置私钥；可设置 TANEI_PRIVATE_KEY_PATH 或放置 TN私钥/tanei.pem（勿提交私钥到 Git）');
+  }
 });
